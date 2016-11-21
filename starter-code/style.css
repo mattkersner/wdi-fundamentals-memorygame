@@ -47,6 +47,10 @@ nav a:hover {
 span {
 	color: #ff00ff;
 }
+img {
+	height: 200px;
+	width: 150px;
+}
 footer {
 	text-align: center;
 	background: #808080;
