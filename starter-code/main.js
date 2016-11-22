@@ -9,7 +9,6 @@ function createBoard() {
 		cardElement.className = 'card';
 		cardElement.setAttribute('data-card', cards[i]);
 		cardElement.addEventListener('click', isTwoCards);
-
 		board.appendChild(cardElement);
 		board.appendChild(cardElement);
 	}
@@ -33,11 +32,14 @@ if (cardsInPlay.length === 2) {
 
 function isMatch(cards) {
 	if (cards[0] === cards[1]) {
-		alert("You found a match!");
+	  setTimeout(function() {
+      alert("You found a match!");
+      }, 500);
 	} else {
-		alert("Sorry, try again.");
-	}
-  window.location.reload();
+	  setTimeout(function() {
+	  alert("Sorry, try again.");
+	}, 500);
+}
 }
 
 createBoard();
